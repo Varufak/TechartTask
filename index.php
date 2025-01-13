@@ -8,10 +8,7 @@
 <div class="content container">
 </div>
 <div class="pagination container">
-		<?php
-			include("./media/Pagination Arrow.svg")
-		?>
-	</a> -->
+	</a>
 </div>
 <?php
 	include("./layout/footer.php");
