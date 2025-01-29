@@ -14,3 +14,4 @@
 	<header <?=$doDrawHeaderLine === true ? 'class="underline"' : ''?>>
 		<img src="/media/logo.png" class="logo">
 	</header>
+	
