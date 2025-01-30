@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 	$doDrawHeaderLine = false;
 	include("./layout/header.php");
 	include("./layout/banner.php");
@@ -12,4 +12,10 @@
 </div>
 <?php
 	include("./layout/footer.php");
-?>
+?> -->
+
+<?php
+
+include "./autoload.php";
+
+var_dump(NewsModel::getRows(0, 4));

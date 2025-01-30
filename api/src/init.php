@@ -1,2 +1,2 @@
 <?php
-include "./src/database_connection.php";
+include __DIR__ . "/DB.php";

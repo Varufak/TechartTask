@@ -1,7 +1,7 @@
 <?php
 include "./src/init.php";
 
-class NewsController
+class News
 {
 	private $conn;
 	public function __construct()
@@ -53,7 +53,7 @@ class NewsController
 	}
 }
 
-$newsController = new NewsController();
+$news = new News();
 
-$data = $newsController->getData();
-$newsController->printData($data);
+$data = $news->getData();
+$news->printData($data);

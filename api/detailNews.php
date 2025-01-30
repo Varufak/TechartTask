@@ -1,7 +1,7 @@
 <?php
 include "./src/init.php";
 
-class DetailNewsController
+class DetailNews
 {
 	private $conn;
 	public function __construct()
@@ -22,6 +22,6 @@ class DetailNewsController
 	}
 }
 
-$detailNewsController = new DetailNewsController();
-$data = $detailNewsController->getData();
-$detailNewsController->printData($data);
+$detailNews = new DetailNews();
+$data = $detailNews->getData();
+$detailNews->printData($data);
