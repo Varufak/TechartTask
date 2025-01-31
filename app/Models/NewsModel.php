@@ -1,6 +1,9 @@
 <?php
 
-include "./api/src/init.php";
+namespace Models;
+
+use DBConnect\DB;
+use \PDO;
 
 class NewsModel
 {

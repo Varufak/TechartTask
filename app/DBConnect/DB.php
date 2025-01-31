@@ -1,5 +1,9 @@
 <?php
 
+namespace DBConnect;
+
+use \PDO;
+
 class DB
 {
 	private static $connection;

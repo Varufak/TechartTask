@@ -1,5 +1,5 @@
 <?php
-include "./src/init.php";
+include "./app/DBConnect/init.php";
 
 class News
 {

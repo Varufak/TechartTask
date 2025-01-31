@@ -16,6 +16,7 @@
 
 <?php
 
-include "./autoload.php";
+include __DIR__ . "/autoload.php";
 
-var_dump(NewsModel::getRows(0, 4));
+use DBConnect\DB as DB;
+use Models\NewsModel as NewsModel;
