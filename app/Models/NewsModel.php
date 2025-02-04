@@ -36,4 +36,12 @@ class NewsModel
 
 		return $item;
 	}
+	public static function getLastRow()
+	{
+		$itemQuery = DB::getConnection()->prepare('SELECT title, announce, image FROM news ORDER BY date DESC LIMIT 1');
+		$itemQuery->execute();
+		$item = $itemQuery->fetch(PDO::FETCH_ASSOC);
+
+		return $item;
+	}
 }
