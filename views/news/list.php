@@ -1,4 +1,3 @@
-<?php include __DIR__ . "/../layout/header.php"; ?>
 <div class="banner">
 	<img class="banner__img" src="/media/<?= $lastItem["image"] ?>">
 	<div class="banner__img gradient"></div>
@@ -35,6 +34,3 @@
 		</a>
 	<?php } ?>
 </div>
-<?php
-	include __DIR__ . "/../layout/footer.php";
-?>

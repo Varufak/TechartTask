@@ -1,4 +1,3 @@
-<?php include __DIR__ . "/../layout/header.php"; ?>
 <div class="breadcrumbs container">
 	<a class="breadcrumbs__main" href="/news/">Главная</a>
 	<span class="breadcrumbs__this">/ <?= $currentNews["title"] ?></span>
@@ -15,6 +14,3 @@
 	</div>
 	<img src="/media/<?= $currentNews["image"] ?>" class="news-detail-img">
 </div>
-<?php
-	include __DIR__ . "/../layout/footer.php";
-?>

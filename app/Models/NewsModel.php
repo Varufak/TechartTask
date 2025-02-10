@@ -2,7 +2,7 @@
 
 namespace Models;
 
-use DBConnect\DB;
+use DB;
 use \PDO;
 
 class NewsModel

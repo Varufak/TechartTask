@@ -1,14 +1,20 @@
 <?php
- 	namespace Controllers;
+namespace Controllers;
 
- 	use Controllers\Controller;
+use Controllers\Controller;
+use Scss;
 
- 	class MainController extends Controller
- 	{
- 		public function actionMain()
-		{
-			$doDrawHeaderLine = true;
-			$title = "Главная";
-			include __DIR__ . "/../../views/mainPage.php";
-		}
- 	}
+class MainController extends Controller
+{
+	public function actionMain()
+	{
+		$doDrawHeaderLine = true;
+		ob_start();
+		$title = "Главная";
+		$this->render("mainPage", [
+			"styles" => Scss::getCompiledPath("styles.scss"),
+			"title" => $title,
+			"doDrawHeaderLine" => $doDrawHeaderLine
+		]);
+	}
+}
